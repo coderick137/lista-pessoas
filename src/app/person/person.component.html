@@ -1,0 +1,28 @@
+<div class="card">
+  <div class="card-header">
+    <div class="d-flex justify-content-between">
+      <div>
+        <h3 class="card-title text-dark"><strong>Lista de pessoas</strong></h3>
+      </div>
+    </div>
+  </div>
+
+  <div class="table-responsive">
+    <table class="table table-success table-hover mb-0">
+      <thead>
+        <tr>
+          <th>Nome</th>
+          <th>Idade</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let person of persons">
+          <td>{{ person.name }}</td>
+          <td>{{ person.age }}</td>
+          <td>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
